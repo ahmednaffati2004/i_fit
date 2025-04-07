@@ -1,0 +1,1941 @@
+/* تعديلات النافبار - يجب أن تكون في بداية الملف */
+.navbar,
+.navbar-default,
+.navbar-fixed-top,
+.black-nav,
+.navbar.yamm.navbar-default {
+    background-color: #000000 !important;
+    border-bottom: 2px solid #029A0C !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+}
+
+/* تعديل المسافة العلوية للجسم */
+body {
+    padding-top: 70px !important;
+    background-color: #000000 !important;
+}
+
+/* تأكيد لون النص في النافبار */
+.navbar-nav > li > a,
+.nav > li > a {
+    color: #ffffff !important;
+}
+
+/* تأكيد لون القائمة المنسدلة */
+.dropdown-menu {
+    background-color: #000000 !important;
+    border: 1px solid #029A0C !important;
+}
+
+.dropdown-menu > li > a {
+    color: #ffffff !important;
+}
+
+/* تأكيد لون الهوفر */
+.nav > li > a:hover,
+.nav > li > a:focus,
+.dropdown-menu > li > a:hover {
+    color: #029A0C !important;
+    background-color: #111111 !important;
+}
+
+/* إزالة أي خلفيات شفافة */
+* {
+    background-color: transparent;
+}
+
+/* تعديل زر التوجل في الموبايل */
+.navbar-toggle {
+    background-color: transparent !important;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #ffffff !important;
+}
+
+/* Global Background Colors */
+body,
+.white-bg,
+.container,
+.parallax-1,
+.about-us,
+.opening-hours,
+.newsletter,
+footer,
+.custom-slider-wrapper,
+.white-block,
+.dark-block,
+.contact-us .block,
+.dropdown-menu,
+.navbar,
+.navbar-default,
+.navbar-fixed-top,
+.black-nav,
+#rev_slider_467_1_wrapper,
+.rev_slider_wrapper {
+    background-color: #000000 !important;
+}
+
+/* Override any white backgrounds */
+* {
+    background-color: #000000 !important;
+}
+
+/* Text colors for better visibility on black */
+body,
+p,
+h1, h2, h3, h4, h5, h6,
+.description,
+.caption,
+.nav > li > a,
+.dropdown-menu > li > a {
+    color: #ffffff !important;
+}
+
+/* Accent colors and borders */
+.navbar-fixed-top {
+    border-bottom: 2px solid #029A0C !important;
+}
+
+.dropdown-menu {
+    border: 1px solid #029A0C !important;
+}
+
+/* Hover states */
+.nav > li > a:hover,
+.nav > li > a:focus,
+.dropdown-menu > li > a:hover {
+    color: #029A0C !important;
+    background-color: #111111 !important;
+}
+
+/* Footer darker background */
+.dark-texture-02 {
+    background-color: #111111 !important;
+}
+
+/* Container shadows for depth */
+.container,
+.white-block,
+.dark-block {
+    box-shadow: 0 2px 10px rgba(255,255,255,0.1);
+}
+
+/* Email Styling */
+.email-header {
+    margin-right: 15px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.email-header i {
+    margin-right: 5px;
+}
+
+.email-header:hover {
+    color: #f7931e !important;
+}
+
+.email-contact {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.email-contact i {
+    margin-right: 10px;
+    color: #f7931e;
+}
+
+.email-contact a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.email-contact a:hover {
+    color: #f7931e;
+}
+
+.footer-contact {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.email-footer {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.email-footer i {
+    margin-right: 8px;
+}
+
+.email-footer:hover {
+    color: #f7931e;
+    text-decoration: none;
+}
+
+/* Phone Number Styling */
+.contact-header {
+    margin-right: 15px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.contact-header i {
+    margin-right: 5px;
+    transform: rotate(15deg);
+}
+
+.contact-header:hover {
+    color: #f7931e !important;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.phone-contact {
+    font-size: 18px;
+    display: inline-block;
+}
+
+.phone-contact i {
+    margin-right: 10px;
+    color: #f7931e;
+    transform: rotate(15deg);
+}
+
+.phone-contact a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.phone-contact a:hover {
+    color: #f7931e;
+}
+
+.contact-divider {
+    color: #fff;
+    margin: 0 15px;
+    opacity: 0.5;
+}
+
+.phone-footer {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.phone-footer i {
+    margin-right: 8px;
+    transform: rotate(15deg);
+}
+
+.phone-footer:hover {
+    color: #f7931e;
+    text-decoration: none;
+}
+
+/* Updated footer contact styling */
+.footer-contact {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact Section Styling */
+.contact-us {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-us .block {
+    background-color: #000000;
+    border: 1px solid #333333;
+    padding: 30px 20px;
+    margin: 15px 0;
+    height: 100%;
+    transition: all 0.3s ease;
+    color: #ffffff;
+}
+
+.contact-us .block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-us .block .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto 20px;
+    color: #fff;
+    background-color: #029A0C;
+    font-size: 24px;
+    line-height: 70px;
+}
+
+.contact-us .block .caption {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-us .block .description {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.contact-us .block .description a {
+    color: #cccccc;
+    transition: color 0.3s ease;
+}
+
+.contact-us .block .description a:hover {
+    color: #029A0C;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-us .block {
+        margin: 10px 0;
+    }
+    
+    .contact-us .block .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 20px;
+    }
+    
+    .contact-us .block .caption {
+        font-size: 16px;
+    }
+    
+    .contact-us .block .description {
+        font-size: 14px;
+    }
+}
+
+.image-7 {
+    background-image: url(../images/inner-banner/7.jpg);
+    background-position: center center;
+    background-size: cover; /* This makes the image cover the entire container while maintaining aspect ratio */
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 250px; /* Minimum height */
+    height: 30vh; /* Responsive height based on viewport height */
+    width: 100%; /* Full width */
+    overflow: hidden;
+}
+
+/* Add a pseudo-element for overlay */
+.image-7:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Slightly adjusted overlay transparency */
+}
+
+/* Adjust the content positioning */
+.title-area-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px 15px; /* Adjusted padding */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-7 {
+        height: 25vh; /* Slightly smaller on mobile */
+        min-height: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-7 {
+        height: 35vh; /* Slightly taller on larger screens */
+        max-height: 400px; /* Maximum height limit */
+    }
+}
+
+/* iPhone 16 Pro Max and similar large phones specific styles */
+@media only screen 
+    and (device-width: 430px) 
+    and (device-height: 932px) 
+    and (-webkit-device-pixel-ratio: 3),
+    /* Also target similar sized devices */
+    screen and (max-width: 430px) {
+
+    /* Banner Image Adjustments */
+    .image-7 {
+        height: 40vh;
+        min-height: 300px;
+        background-position: center top;
+    }
+
+    /* Title Area Content */
+    .title-area-content {
+        padding: 15px;
+    }
+
+    .title-area-content h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .title-area-content h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    /* Contact Blocks Adjustments */
+    .contact-us {
+        padding: 30px 15px;
+    }
+
+    .contact-us .block {
+        margin: 10px 0;
+        padding: 20px 15px;
+    }
+
+    .contact-us .block .icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+
+    .contact-us .block .caption {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contact-us .block .description {
+        font-size: 14px;
+    }
+
+    /* Header Contact Info */
+    .contact-header, 
+    .email-header {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .phone-contact,
+    .email-contact {
+        font-size: 16px;
+    }
+
+    /* Navigation Adjustments */
+    .navbar-brand img {
+        height: 40px;
+        padding: 3px 0;
+    }
+
+    .navbar-toggle {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* Footer Adjustments */
+    .footer-contact {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .phone-footer,
+    .email-footer {
+        font-size: 14px;
+    }
+
+    .contact-divider {
+        display: none; /* Hide divider on mobile */
+    }
+
+    /* Touch Target Sizes */
+    .phone-contact a,
+    .email-contact a,
+    .phone-footer,
+    .email-footer {
+        padding: 8px; /* Larger touch target */
+        display: inline-block;
+    }
+
+    /* Improved Spacing */
+    .contact-us .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .contact-us [class*='col-'] {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Safe Area Insets for iPhone */
+    .contact-us,
+    .title-area-content {
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    /* Smooth Scrolling */
+    html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Better Touch Feedback */
+    a, button {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    a:active,
+    button:active {
+        opacity: 0.7;
+    }
+}
+
+/* Add viewport meta tag to your HTML head if not already present */
+/*
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+*/
+
+/* Add these styles to your CSS file */
+.navbar.fill-black {
+    background-color: #000000 !important;
+    border-bottom: 2px solid #00ff9d !important;
+}
+
+.navbar.fill-black .nav > li > a {
+    color: #ffffff !important;
+}
+
+.navbar.fill-black .nav > li > a:hover,
+.navbar.fill-black .nav > li > a:focus {
+    color: #00ff9d !important;
+    background-color: transparent !important;
+}
+
+.navbar.fill-black .social-header a.transparent-grey {
+    color: #ffffff !important;
+}
+
+.navbar.fill-black .social-header a.transparent-grey:hover {
+    color: #00ff9d !important;
+}
+
+.navbar.fill-black .navbar-toggle .icon-bar {
+    background-color: #ffffff !important;
+}
+
+.navbar.fill-black .dropdown-menu {
+    background-color: #000000 !important;
+    border: 1px solid #00ff9d !important;
+}
+
+.navbar.fill-black .dropdown-menu > li > a {
+    color: #ffffff !important;
+}
+
+.navbar.fill-black .dropdown-menu > li > a:hover {
+    background-color: #000000 !important;
+    color: #00ff9d !important;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000000 !important;
+    border-bottom: 2px solid #029A0C !important;
+    position: relative !important;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+    height: auto;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
+
+.nav > li > a {
+    color: #ffffff !important;
+    padding: 20px 15px;
+    font-size: 16px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    color: #029A0C !important;
+    background-color: transparent !important;
+}
+
+/* Slider/Image Modifications */
+#rev_slider_467_1_wrapper {
+    max-height: 400px !important;
+    width: 85% !important;
+    margin: 20px auto !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    box-shadow: 0 5px 20px rgba(2, 154, 12, 0.2) !important;
+}
+
+.rev_slider_wrapper {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    background: #000000 !important;
+}
+
+.rev_slider img {
+    max-height: 400px !important;
+    object-fit: cover !important;
+    border-radius: 15px !important;
+}
+
+/* About Section Images */
+.about-us img {
+    max-width: 90% !important;
+    height: 350px !important;
+    object-fit: cover !important;
+    border-radius: 15px !important;
+    box-shadow: 0 5px 15px rgba(2, 154, 12, 0.2) !important;
+    transition: transform 0.3s ease !important;
+    margin: 20px auto !important;
+    display: block !important;
+}
+
+.about-us img:hover {
+    transform: scale(1.02) !important;
+}
+
+/* Opening Hours Section */
+.opening-hours img {
+    height: 200px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(2, 154, 12, 0.15) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    margin-bottom: 15px !important;
+}
+
+.opening-hours img:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 20px rgba(2, 154, 12, 0.25) !important;
+}
+
+.white-block, .dark-block {
+    background: #000000;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Container Modifications */
+.container {
+    background: #000000;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Social Header Icons */
+.social-header a.transparent-grey {
+    color: #ffffff !important;
+    margin: 0 5px;
+}
+
+.social-header a.transparent-grey:hover {
+    color: #029A0C !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #000000 !important;
+    border: 1px solid #029A0C;
+    border-radius: 4px;
+    padding: 5px 0;
+}
+
+.dropdown-menu > li > a {
+    color: #ffffff !important;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #111111 !important;
+    color: #029A0C !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative !important;
+    }
+    
+    .navbar-brand img {
+        height: 40px;
+    }
+    
+    .nav > li > a {
+        padding: 10px 15px;
+    }
+    
+    #rev_slider_467_1_wrapper {
+        max-height: 300px !important;
+        width: 100% !important;
+    }
+    
+    .about-us img {
+        height: 250px !important;
+        max-width: 100% !important;
+    }
+    
+    .opening-hours img {
+        height: 150px !important;
+    }
+}
+
+/* Background Colors */
+.white-bg {
+    background-color: #000000 !important;
+    padding: 40px 0;
+}
+
+.parallax-1 {
+    background-color: #000000 !important;
+}
+
+/* Section Spacing */
+.about-us, .opening-hours {
+    padding: 60px 0;
+    background: #000000;
+}
+
+/* Image Containers */
+.img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 15px 0;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.img-container:hover img {
+    transform: scale(1.05);
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.img-container:hover .img-overlay {
+    opacity: 1;
+}
+
+.white-block {
+    background: #000000;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(2,154,12,0.2);
+}
+
+.white-block:hover {
+    transform: translateY(-5px);
+}
+
+.white-block .icon {
+    font-size: 40px;
+    color: #029A0C;
+    margin-bottom: 15px;
+}
+
+.white-block .caption {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.menu-description {
+    color: #cccccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.custom-button i {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.custom-button:hover i {
+    transform: translateX(-5px);
+}
+
+/* تحسينات للشاشات المحمولة */
+@media (max-width: 768px) {
+    .white-block {
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .white-block .icon {
+        font-size: 32px;
+    }
+
+    .white-block .caption {
+        font-size: 20px;
+    }
+
+    .menu-description {
+        font-size: 14px;
+    }
+
+    .button-group {
+        gap: 10px;
+    }
+}
+
+/* Custom slider wrapper to reduce size */
+.custom-slider-wrapper {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#rev_slider_467_1_wrapper {
+    max-height: 400px !important;
+    margin: 0 auto !important;
+    background: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.rev-slidebg {
+    opacity: 0.9 !important;
+}
+
+.slide-overlay {
+    background: rgba(0, 0, 0, 0.4) !important;
+}
+
+.tp-caption.NotGeneric-Title {
+    font-size: 42px !important;
+    line-height: 48px !important;
+    font-weight: 600 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tp-caption.NotGeneric-SubTitle {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.slider-buttons {
+    display: flex !important;
+    gap: 20px;
+    justify-content: center;
+}
+
+.slider-buttons .btn {
+    min-width: 180px !important;
+    padding: 16px 40px !important;
+    font-size: 20px !important;
+    border-radius: 50px !important;
+    transition: all 0.3s ease !important;
+    text-transform: none !important;
+    font-weight: 500 !important;
+}
+
+.slider-buttons .btn-primary {
+    background: #4CAF50 !important;
+    border: none !important;
+    color: white !important;
+}
+
+.slider-buttons .btn-outline {
+    background: transparent !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+
+.slider-buttons .btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+}
+
+@media (max-width: 768px) {
+    .custom-slider-wrapper {
+        padding: 10px;
+    }
+    
+    #rev_slider_467_1_wrapper {
+        max-height: 300px !important;
+    }
+    
+    .tp-caption.NotGeneric-Title {
+        font-size: 32px !important;
+        line-height: 38px !important;
+    }
+    
+    .tp-caption.NotGeneric-SubTitle {
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+    
+    .slider-buttons .btn {
+        min-width: 160px !important;
+        padding: 14px 30px !important;
+        font-size: 18px !important;
+    }
+}
+
+/* Navigation text colors */
+.nav > li > a {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.nav > li > a:hover {
+    color: #029A0C !important;
+}
+
+/* Add spacing between sections */
+section {
+    margin-bottom: 40px;
+}
+
+/* Add these rules at the end of your CSS file to ensure they take precedence */
+.navbar-static-top {
+    position: static !important;
+    background-color: #000000 !important;
+    border-bottom: 2px solid #029A0C !important;
+}
+
+.navbar-default {
+    background-color: #000000 !important;
+}
+
+.black-nav {
+    background-color: #000000 !important;
+}
+
+/* Override any transparent backgrounds */
+.navbar-default.navbar {
+    background-color: #000000 !important;
+}
+
+/* Remove any fixed positioning */
+.navbar {
+    position: static !important;
+    top: auto;
+}
+
+/* Ensure proper z-index */
+.navbar-static-top {
+    z-index: 1000;
+}
+
+/* Remove any transform properties that might affect positioning */
+.navbar, .navbar-static-top {
+    transform: none !important;
+    -webkit-transform: none !important;
+}
+
+/* Ensure content starts after navbar */
+.custom-slider-wrapper {
+    margin-top: 0;
+}
+
+/* Override any background transitions */
+.navbar, .navbar-default, .black-nav {
+    transition: none !important;
+    -webkit-transition: none !important;
+}
+
+/* تعديل أنماط النافبار */
+.navbar-fixed-top {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #000000 !important;
+    border-bottom: 2px solid #029A0C !important;
+    padding: 0;
+    margin: 0;
+}
+
+/* إضافة padding للجسم لمنع تداخل المحتوى مع النافبار الثابت */
+body {
+    background-color: #000000 !important;
+    padding-top: 70px;
+    color: #ffffff;
+}
+
+/* تأكيد لون النافبار الأسود */
+.black-nav {
+    background-color: #000000 !important;
+}
+
+/* تنسيق العناصر داخل النافبار */
+.navbar-fixed-top .navbar-nav > li > a {
+    color: #ffffff !important;
+}
+
+.navbar-fixed-top .navbar-nav > li > a:hover {
+    color: #029A0C !important;
+}
+
+/* تنسيق القائمة المنسدلة */
+.navbar-fixed-top .dropdown-menu {
+    background-color: #000000;
+    border: 1px solid #029A0C;
+}
+
+.navbar-fixed-top .dropdown-menu > li > a {
+    color: #ffffff;
+}
+
+.navbar-fixed-top .dropdown-menu > li > a:hover {
+    background-color: #000000;
+    color: #029A0C;
+}
+
+/* تعديلات للشاشات الصغيرة */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+    
+    .navbar-fixed-top {
+        padding: 5px 0;
+    }
+}
+
+/* إزالة أي تأثيرات شفافية */
+.navbar-default,
+.navbar-fixed-top,
+.black-nav {
+    opacity: 1 !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+}
+
+/* Update newsletter section */
+.newsletter {
+    background-color: #000000;
+}
+
+/* Update footer sections */
+footer {
+    background-color: #000000;
+}
+
+.dark-texture-02 {
+    background-color: #111111;
+}
+
+/* Update any remaining white backgrounds */
+.rev_slider_wrapper {
+    background: #000000 !important;
+}
+
+#rev_slider_467_1_wrapper {
+    background: #000000 !important;
+}
+
+/* تعديلات صور المنتجات */
+.product-image {
+    height: 250px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    transition: transform 0.3s ease !important;
+    margin-bottom: 20px !important;
+}
+
+.product-image:hover {
+    transform: scale(1.05) !important;
+}
+
+/* تعديلات صور الخلفية */
+.image-7 {
+    height: 300px !important;
+    background-position: center !important;
+    background-size: cover !important;
+    border-radius: 0 0 15px 15px !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* تعديلات للشاشات المتوسطة */
+@media (max-width: 992px) {
+    #rev_slider_467_1_wrapper {
+        max-height: 400px !important;
+        width: 95% !important;
+    }
+    
+    .about-us img {
+        height: 300px !important;
+    }
+    
+    .opening-hours img {
+        height: 180px !important;
+    }
+}
+
+/* تنسيق صور الشعار */
+.navbar-brand img {
+    height: 45px !important;
+    width: auto !important;
+    transition: transform 0.3s ease !important;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05) !important;
+}
+
+/* تنسيق صور الفوتر */
+footer img {
+    max-height: 60px !important;
+    width: auto !important;
+    margin: 10px auto !important;
+    display: block !important;
+}
+
+/* تنسيق صور القسم About Us */
+.about-us img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* تنسيق صور Opening Hours */
+.opening-hours .inside img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* تحديث تصميم الأزرار */
+.custom-button {
+    display: inline-block;
+    padding: 16px 35px;
+    background: #029A0C;
+    color: white !important;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: none;
+    margin: 10px 5px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(2,154,12,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-button:hover {
+    background: #03b00f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(2,154,12,0.3);
+}
+
+.custom-button.outline {
+    background: transparent;
+    border: 2px solid #029A0C;
+    color: #029A0C !important;
+}
+
+.custom-button.outline:hover {
+    background: #029A0C;
+    color: white !important;
+}
+
+/* تحديث تصميم الصور */
+.rev-slidebg,
+.about-us img,
+.opening-hours img,
+.product-image {
+    border-radius: 25px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    transition: all 0.4s ease !important;
+    border: none !important;
+    overflow: hidden !important;
+}
+
+.rev-slidebg:hover,
+.about-us img:hover,
+.opening-hours img:hover,
+.product-image:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2) !important;
+}
+
+/* تحسين تصميم القسم الرئيسي */
+#rev_slider_467_1_wrapper {
+    border-radius: 25px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    margin: 20px auto !important;
+    max-width: 1200px !important;
+}
+
+/* تحسين تصميم صور المنتجات */
+.product-image {
+    height: 280px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+/* تحسينات للشاشات المحمولة */
+@media (max-width: 768px) {
+    .custom-button {
+        padding: 14px 30px;
+        font-size: 14px;
+    }
+    
+    .product-image {
+        height: 220px !important;
+    }
+    
+    #rev_slider_467_1_wrapper {
+        border-radius: 20px !important;
+        margin: 15px auto !important;
+    }
+}
+
+/* تحسين تصميم صور القسم About Us */
+.about-us img {
+    max-height: 400px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+/* تحسين تصميم صور Opening Hours */
+.opening-hours .inside img {
+    height: 220px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Menu Item Styles */
+.menu-item {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #000000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.menu-item .img-container {
+    position: relative;
+    overflow: hidden;
+    height: 220px; /* Reduced height */
+}
+
+.menu-item .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.menu-item:hover .img-container img {
+    transform: scale(1.05);
+}
+
+.menu-details {
+    padding: 25px 20px;
+    text-align: center;
+    background: #000000;
+}
+
+.menu-details h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.menu-details p {
+    color: #cccccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Button Group Styles */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0 15px 25px;
+}
+
+/* Button Styles */
+.custom-button {
+    display: inline-block;
+    padding: 14px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 160px;
+    border: 2px solid transparent;
+}
+
+/* Primary (Green) Button */
+.custom-button:not(.outline) {
+    background: #029A0C;
+    color: #ffffff !important;
+    border-color: #029A0C;
+}
+
+.custom-button:not(.outline):hover {
+    background: #03b00f;
+    border-color: #03b00f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(2,154,12,0.3);
+}
+
+/* Outline (White) Button */
+.custom-button.outline {
+    background: transparent;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+}
+
+.custom-button.outline:hover {
+    background: #ffffff;
+    color: #029A0C !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-item .img-container {
+        height: 180px;
+    }
+    
+    .menu-details {
+        padding: 20px 15px;
+    }
+    
+    .menu-details h3 {
+        font-size: 20px;
+    }
+    
+    .menu-details p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 15px 20px;
+    }
+    
+    .custom-button {
+        padding: 12px 25px;
+        font-size: 14px;
+        min-width: 140px;
+    }
+}
+
+/* Application Form Styles */
+.application-form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.application-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #28a745, #1e7e34);
+}
+
+.form-header {
+    margin-bottom: 40px;
+}
+
+.form-header .icon-circle {
+    width: 80px;
+    height: 80px;
+    background: #28a745;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-header .icon-circle i {
+    font-size: 36px;
+    color: white;
+}
+
+.form-header h3 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+    position: relative;
+    opacity: 0;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.form-header h3.typing {
+    opacity: 1;
+    background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.4),
+        4px 4px 8px rgba(2,154,12,0.3),
+        0 0 15px rgba(2,154,12,0.2);
+    animation: 
+        textFloat 4s ease-in-out infinite,
+        textGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes textFloat {
+    0% { transform: perspective(1000px) translateZ(0) rotateX(0deg); }
+    25% { transform: perspective(1000px) translateZ(20px) rotateX(2deg); }
+    50% { transform: perspective(1000px) translateZ(40px) rotateX(-2deg); }
+    75% { transform: perspective(1000px) translateZ(20px) rotateX(1deg); }
+    100% { transform: perspective(1000px) translateZ(0) rotateX(0deg); }
+}
+
+@keyframes textGlow {
+    from { text-shadow: 0 0 10px rgba(2,154,12,0.2), 0 0 20px rgba(2,154,12,0.1), 0 0 30px rgba(2,154,12,0.1); }
+    to { text-shadow: 0 0 20px rgba(2,154,12,0.4), 0 0 40px rgba(2,154,12,0.2), 0 0 60px rgba(2,154,12,0.2); }
+}
+
+.form-header p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.application-form .form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.application-form label {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+}
+
+.application-form .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    height: 45px;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.application-form textarea.form-control {
+    height: auto;
+    min-height: 100px;
+}
+
+.application-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #28a745;
+    box-shadow: none;
+}
+
+.application-form .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #28a745;
+    transition: 0.4s;
+}
+
+.application-form .form-control:focus ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.application-form .custom-button {
+    background: #28a745;
+    border: none;
+    padding: 12px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.application-form .custom-button:hover {
+    background: #1e7e34;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+.application-form .custom-button i {
+    margin-right: 8px;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Form Row Styles */
+.form-row {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-row > [class*='col-'] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .application-form {
+        padding: 25px;
+        margin: 30px 0;
+    }
+
+    .form-header .icon-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .form-header .icon-circle i {
+        font-size: 28px;
+    }
+
+    .form-header h3 {
+        font-size: 24px;
+    }
+
+    .application-form .form-control {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .application-form label {
+        font-size: 14px;
+    }
+
+    .application-form .custom-button {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Preloader Styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    z-index: 9999;
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#status .logo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#status .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+}
+
+.sk-cube-grid .sk-cube {
+    width: 33.33%;
+    height: 33.33%;
+    background-color: #029A0C;
+    float: left;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+    animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+    animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+    animation-delay: 0.2s;
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+/* Hide body overflow during loading */
+body.loading {
+    overflow: hidden;
+}
+
+/* Enhanced Form Section Styles */
+.form-section {
+    background: linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.85) 100%);
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/pattern.png') repeat;
+    opacity: 0.05;
+    animation: backgroundScroll 20s linear infinite;
+}
+
+@keyframes backgroundScroll {
+    from { background-position: 0 0; }
+    to { background-position: -500px 500px; }
+}
+
+.application-form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(2, 154, 12, 0.2);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.application-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #029A0C, #02c80f, #029A0C);
+    background-size: 200% 100%;
+    animation: gradientBorder 3s linear infinite;
+}
+
+@keyframes gradientBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Enhanced Icon Styles */
+.icon-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.icon-circle {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #029A0C, #02c80f);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 
+        0 8px 25px rgba(2, 154, 12, 0.4),
+        0 0 15px rgba(2, 154, 12, 0.2) inset;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+.icon-wrapper:hover .icon-circle {
+    transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) translateZ(20px);
+    box-shadow: 
+        0 15px 35px rgba(2, 154, 12, 0.6),
+        0 0 25px rgba(2, 154, 12, 0.3) inset;
+    background: linear-gradient(135deg, #02b00d, #02e010);
+}
+
+.floating {
+    animation: floating 4s ease-in-out infinite;
+    font-size: 42px;
+    color: white;
+    text-shadow: 
+        0 2px 5px rgba(0, 0, 0, 0.2),
+        0 0 15px rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.icon-wrapper:hover .floating {
+    animation: floatingHover 2s ease-in-out infinite;
+    transform: scale(1.1) translateZ(10px);
+    text-shadow: 
+        0 4px 10px rgba(0, 0, 0, 0.3),
+        0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px) rotate(0deg) translateZ(0); }
+    25% { transform: translateY(-12px) rotate(3deg) translateZ(5px); }
+    50% { transform: translateY(0px) rotate(0deg) translateZ(10px); }
+    75% { transform: translateY(12px) rotate(-3deg) translateZ(5px); }
+    100% { transform: translateY(0px) rotate(0deg) translateZ(0); }
+}
+
+@keyframes floatingHover {
+    0% { transform: translateY(0px) rotate(0deg) scale(1.1) translateZ(10px); }
+    25% { transform: translateY(-8px) rotate(5deg) scale(1.15) translateZ(15px); }
+    50% { transform: translateY(0px) rotate(0deg) scale(1.1) translateZ(20px); }
+    75% { transform: translateY(8px) rotate(-5deg) scale(1.15) translateZ(15px); }
+    100% { transform: translateY(0px) rotate(0deg) scale(1.1) translateZ(10px); }
+}
+
+/* Enhanced Sparkle Effects */
+.sparkle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.8), rgba(2,154,12,0.4));
+    box-shadow: 
+        0 0 10px rgba(2,154,12,0.4),
+        0 0 20px rgba(2,154,12,0.2),
+        0 0 30px rgba(2,154,12,0.1);
+    opacity: 0;
+    animation: sparkleIn 0.4s ease-out forwards;
+}
+
+@keyframes sparkleIn {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Animation Classes */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
