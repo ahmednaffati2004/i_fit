@@ -439,3 +439,130 @@ const style = $('<style>').text(`
 `);
 
 $('head').append(style);
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    let currentSlide = 0;
+    let slideInterval;
+    const intervalTime = 5000;
+    
+    // Initialize slider
+    function initSlider() {
+      // Set first slide as active
+      slides[0].classList.add('active');
+      dots[0].classList.add('active');
+      
+      // Start autoplay
+      startSlideInterval();
+      
+      // Add event listeners
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+      
+      // Add event listeners to dots
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          goToSlide(index);
+        });
+      });
+      
+      // Pause autoplay on hover
+      document.querySelector('.slider-wrapper').addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+      });
+      
+      // Resume autoplay on mouse leave
+      document.querySelector('.slider-wrapper').addEventListener('mouseleave', () => {
+        startSlideInterval();
+      });
+      
+      // Add touch support
+      let touchStartX = 0;
+      let touchEndX = 0;
+      
+      const slider = document.querySelector('.slider');
+      
+      slider.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+      
+      slider.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      });
+      
+      function handleSwipe() {
+        const swipeThreshold = 50;
+        if (touchEndX < touchStartX - swipeThreshold) {
+          // Swipe left
+          nextSlide();
+        } else if (touchEndX > touchStartX + swipeThreshold) {
+          // Swipe right
+          prevSlide();
+        }
+      }
+    }
+    
+    // Start autoplay
+    function startSlideInterval() {
+      slideInterval = setInterval(nextSlide, intervalTime);
+    }
+    
+    // Go to previous slide
+    function prevSlide() {
+      goToSlide(currentSlide - 1);
+    }
+    
+    // Go to next slide
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
+    
+    // Go to specific slide
+    function goToSlide(slideIndex) {
+      // Remove active class from current slide and dot
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      
+      // Calculate new slide index (handle wrapping)
+      currentSlide = (slideIndex + slides.length) % slides.length;
+      
+      // Add active class to new slide and dot
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+      
+      // Reset autoplay timer
+      clearInterval(slideInterval);
+      startSlideInterval();
+    }
+    
+    // Initialize the slider
+    initSlider();
+    
+    // Preload images for smoother transitions
+    function preloadImages() {
+      const slideImages = document.querySelectorAll('.slide-image');
+      slideImages.forEach(slideImage => {
+        const bgImg = slideImage.style.backgroundImage.match(/url$$['"]?([^'"]+)['"]?$$/);
+        if (bgImg && bgImg[1]) {
+          const img = new Image();
+          img.src = bgImg[1];
+        }
+      });
+    }
+    
+    // Preload images
+    preloadImages();
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+      // Adjust any responsive elements if needed
+    });
+  });
