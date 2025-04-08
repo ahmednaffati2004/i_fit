@@ -8,6 +8,10 @@
 		<title>Delicieux - Exquisite Restaurant HTML Template</title>
 		<!-- All Stylesheets -->
 		<link href="css/all-stylesheets.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -46,7 +50,7 @@
 			========================================================================= -->
 		<!-- NAVIGATION STARTS
 			========================================================================= -->
-			<nav class="navbar yamm navbar-default fill-black normal">
+			<nav class="navbar yamm navbar-default navbar-fixed-top black-nav">
 				<div class="container-fluid">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
@@ -57,29 +61,42 @@
 						<span class="icon-bar"></span>
 						</button>
 						<a class="navbar-brand visible-sm visible-xs light-logo" href="#"><img src="images/logos/logo-nav.png" alt=""></a>
-						<a class="navbar-brand visible-sm visible-xs dark-logo" href="#"><img src="images/logos/logo-nav-dark.png" alt=""></a>
+							
 					</div>
+	
+					<!-- Contact Info Header -->
+					<div class="contact-info-header">
+						<a href="tel:+218912451177" class="contact-header">
+							<i class="fas fa-phone-alt"></i> 091-245-1177
+						</a>
+						<a href="mailto:info@i-fit.ly" class="email-header">
+							<i class="fas fa-envelope"></i> info@i-fit.ly
+						</a>
+					</div>
+	
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="navbar">
 						<ul class="nav navbar-nav" data-hover="dropdown" data-animations="fadeIn fadeIn fadeInUp fadeInLeft">
 							<li class="pull-left"><a class="navbar-brand hidden-sm hidden-xs light-logo" href="#"><img src="images/logos/logo-nav.png" alt=""></a> <a class="navbar-brand hidden-sm hidden-xs dark-logo" href="#"><img src="images/logos/logo-nav-dark.png" alt=""></a></li>
 						   
 						  
-							<li class="social-header pull-right hidden-xs hidden-sm hidden-md">
-								<a href="tel:091-245-1177" class="transparent-grey contact-header">
-									<i class="fa fa-phone"></i> 091-245-1177
-								</a>
-								<a href="mailto:info@i-fit.ly" class="transparent-grey email-header">
-									<i class="fa fa-envelope"></i> info@i-fit.ly
-								</a>
-								<a href="#" class="transparent-grey"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="transparent-grey"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="transparent-grey"><i class="fa fa-instagram"></i></a>
-								<a href="#" class="transparent-grey"><i class="fa fa-tripadvisor"></i></a>
-							</li>
+								<li class="social-header pull-right hidden-xs hidden-sm hidden-md">
+									<a href="tel:091-245-1177" class="transparent-grey contact-header">
+										<i class="fa fa-phone"></i> 091-245-1177
+									</a>
+									<a href="mailto:info@i-fit.ly" class="transparent-grey email-header">
+										<i class="fa fa-envelope"></i> info@i-fit.ly
+									</a>
+									<a href="https://www.facebook.com/share/18hYquTtt6/?mibextid=wwXIfr" class="transparent-grey"><i class="fab fa-facebook"></i></a>
+								<a href="#" class="transparent-grey"><i class="fab fa-twitter"></i></a>
+								<a href="https://www.instagram.com/i.fit.ly" class="transparent-grey"><i class="fab fa-instagram"></i></a>
+							   <a href="https://wa.me/0912451177" class="transparent-grey"><i class="fab fa-whatsapp"></i></a>
+								</li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">الرئيسية</a>
-								<ul class="dropdown-menu">
+									<a href="index_fullscreen_fade.html" class="nav-menu" data-toggle="" role="" aria-haspopup="" aria-expanded="">
+										<span>الرئيسية</span> <i class="fas fa-home"></i>
+									</a>
+									<!-- <ul class="dropdown-menu">
 									<li class="dropdown-submenu">
 										<a tabindex="-1" href="#">Multiple Page</a>
 										<ul class="dropdown-menu">
@@ -96,8 +113,8 @@
 											<li><a href="index_youtube.html">YouTube Video</a></li>
 											<li><a href="index_viemo.html">Vimeo Video</a></li>
 										</ul>
-									</li>                                
-									<li class="dropdown-submenu">
+										</li>                          -->       
+										<!-- <li class="dropdown-submenu">
 										<a tabindex="-1" href="#">One Page</a>
 										<ul class="dropdown-menu">
 											<li><a href="index_onepage_fade.html">Fullscreen Fade</a></li>
@@ -114,51 +131,41 @@
 											<li><a href="index_onepage_viemo.html">Vimeo Video</a></li>
 										</ul>
 									</li>
-								</ul>
+									</ul> -->
 							</li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">القائمة</a>
+									<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<span>المنيو</span> <i class="fas fa-utensils"></i>
+									</a>
 							  <ul class="dropdown-menu">
-									<li><a href="our-menu.html">Our Menu</a></li>
-									<li><a href="menu-grid.html">Menu Grid</a></li>
-									<li><a href="menu-shown-all.html">Menu Shown All</a></li>
-									<li><a href="menu-details.html">Menu Details</a></li>
+										<li><a href="#">Our Menu</a></li>
+										<li><a href="#">Menu Grid</a></li>
+										<li><a href="#">Menu Shown All</a></li>
+										<li><a href="#">Menu Details</a></li>
 								</ul>
 							</li>
 						  
-						  <li><a href="reservation.html" class="nav-menu">الحجز</a></li>
+							  <li><a href="#" class="nav-menu">
+									<span>اوقات العمل</span> <i class="fas fa-clock"></i>
+								</a></li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">المدونة</a>
-								<ul class="dropdown-menu">
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="blog-list.html">Blog List</a></li>
-									<li><a href="blog-grid.html">Blog Grid</a></li>
-									<li class="dropdown-submenu">
-										<a tabindex="-1" href="#">Blog Sidebar</a>
-										<ul class="dropdown-menu">
-											<li><a href="blog-left-sidebar.html">Left</a></li>
-											<li><a href="blog-right-sidebar.html">Right</a></li>
-										</ul>
-									</li>
-									<li class="dropdown-submenu">
-										<a tabindex="-1" href="#">Blog Details</a>
-										<ul class="dropdown-menu">
-											<li><a href="blog-details.html">Slider</a></li>
-											<li><a href="blog-details-image.html">Image</a></li>
-											<li><a href="blog-details-gallery.html">Gallery</a></li>
-											<li><a href="blog-details-lightbox.html">LightBox</a></li>
-											<li><a href="blog-details-youtube.html">Youtube</a></li>
-											<li><a href="blog-details-viemo.html">Viemo</a></li>
-											<li><a href="blog-details-video.html">HTML5 Video</a></li>
-											<li><a href="blog-details-soundcloud.html">Soundcloud</a></li>
-											<li><a href="blog-details-sidebar.html">With Sidebar</a></li>
-										</ul>
-									</li>
-								</ul>
+									<a href="lowcarb.html" class="nav-menu" data-toggle="" role="" aria-haspopup="" aria-expanded="">
+										<span>اشتراكات الوجبات</span> <i class="fas fa-leaf"></i>
+									</a>
+									<!-- <ul class="dropdown-menu">
+										<li><a href="lowcarb.html">Low Carb</a></li>
+										<li><a href="#">Keto Diet</a></li>
+										<li><a href="#">Body building diet</a></li>
+										<li><a href="#">Carb cycle diet</a></li>
+										<li><a href="#">Weight gain diet</a></li>
+										
+									</ul> -->
 							</li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">المتجر</a>
-						  <ul class="dropdown-menu">
+									<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<span>فروعنا</span> <i class="fas fa-map-marker-alt"></i>
+									</a>
+							 <!--      <ul class="dropdown-menu">
 									<li><a href="shop.html">Shop</a></li>
 									<li><a href="shop-sidebar.html">With Sidebar</a></li>
 									<li><a href="shop-cart.html">Carts</a></li>
@@ -166,21 +173,25 @@
 									<li><a href="shop-checkout.html">Checkout</a></li>
 									<li><a href="shop-my-account.html">My Account</a></li>
 									<li><a href="login.html">Login</a></li>
-								</ul>
+									</ul> -->
 							</li>
-						<li class="visible-xs"><a href="#">SHOPPING CART</a></li>
+							
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">الصفحات</a>
-								<ul class="dropdown-menu">
+									<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+										<span>وظائف</span> <i class="fas fa-briefcase"></i>
+									</a>
+									<!-- <ul class="dropdown-menu">
 								   <li><a href="about-us.html">About</a></li>
 									<li><a href="gallery.html">Gallery</a></li>
 									<li><a href="our-team.html">Team</a></li>
 									<li><a href="events.html">Events</a></li>
 									<li><a href="error-page.html">Error Page</a></li>
 									<li><a href="coming-soon.html">Coming Soon</a></li>
-								</ul>
+									</ul> -->
 							</li>
-						  <li><a href="contact-us.html" class="nav-menu">اتصل بنا</a></li>
+							  <li><a href="contact-us.html" class="nav-menu">
+									<span>اتصل بنا</span> <i class="fas fa-envelope"></i>
+								</a></li>
 						</ul>
 					</div>
 					<!-- /.navbar-collapse -->
@@ -194,7 +205,6 @@
 		<div class="inner-banner title-area text-center image-7">
 			<div class="container title-area-content">
 				<h1 class="animated" data-animation="fadeInUp" data-animation-delay="200">اتصل بنا</h1>
-				<h2 class="animated" data-animation="fadeInDown" data-animation-delay="200">All about i_fit</h2>
 				<div class="line animated" data-animation="fadeInDown" data-animation-delay="400"></div>
                 <div class="bread-crumb"><a href="index_fullscreen_fade.html">>الرئيسية</a> <span>اتصل بنا</span></div>
 			</div>
@@ -249,13 +259,13 @@
 				</div>
 			</div>
 			<!-- Google Map Starts -->
-			<div class="container-fluid">
+			<!-- <div class="container-fluid">
 				<div class="row no-gutter-12">
 					<div class="col-lg-12 maps animated" data-animation="fadeInUp" data-animation-delay="400">						
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25215.625657884106!2d144.956637!3d-37.81456500000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4e793770d3%3A0x9e44d6ad0d76ba7c!2s121+King+St%2C+Melbourne+VIC+3000%2C+Australia!5e0!3m2!1sen!2sus!4v1435061406583" height="400" allowfullscreen></iframe>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- Google Map Ends -->
 			<div class="get-in-touch">
 				<div class="container">
@@ -263,9 +273,9 @@
 						<div class="col-lg-12">
 							<div class="herotext">
 								<p class="box-heading animated" data-animation="fadeInUp" data-animation-delay="400">
-									<span>Get in Touch</span>
+									<span>ابقي علي تواصل معنا</span>
 								</p>
-								<div class="description animated" data-animation="fadeInUp" data-animation-delay="600">One morning, when Gregor Samsa woke from troubled dreams, he found himself<br>transformed in his bed into a horrible vermin. </div>
+								<div class="description animated" data-animation="fadeInUp" data-animation-delay="600"> </div>
 							</div>
 						</div>
 					</div>
@@ -292,7 +302,7 @@
 				========================================================================= -->			
 			<!-- NEWSLETTER STARTS
 				========================================================================= -->  
-			<div class="container-fluid newsletter">
+			<!-- <div class="container-fluid newsletter">
 				<div class="row row1">
 					<div class="col-lg-4 col-lg-offset-4">
 						<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
@@ -307,48 +317,57 @@
 						</form>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- /. NEWSLETTER STARTS
 				========================================================================= -->  
 		</div>
 		<!-- FOOTER STARTS
 			========================================================================= -->  
-		<footer>
-			<div class="container-fluid">
-				<div class="row row1">
-					<div class="col-lg-8 col-lg-offset-2">
-						<div class="logo animated" data-animation="fadeInUp" data-animation-delay="400"><img src="images/logos/f-logo.png" class="img-responsive center-block" alt=""></div>
-						<ul class="social-icons animated" data-animation="fadeInUp" data-animation-delay="600">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-						</ul>
-						<div class="totop">
-							<a href="#" class="scrollup"><img src="images/icons/to-top/to-top.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="dark-texture-02">
-				<div class="container">
-					<div class="row row2">
-						<div class="col-lg-6 col-md-6">
-							<ul class="links">
-								<li><a href="">Home</a></li>
-								<li><a href="">About us</a></li>
-								<li><a href="">Use of Terms</a></li>
-								<li><a href="">Privacy Policy</a></li>
-								<li><a href="">Contact us</a></li>
+			<footer>
+				<div class="container-fluid">
+					<div class="row row1">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="logo animated" data-animation="fadeInUp" data-animation-delay="400"><img src="images/logos/f-logo.png" class="img-responsive center-block" alt="Footer Logo" onerror="this.src='images/logos/logo-nav.png'; this.onerror=null;"></div>
+							<div class="footer-contact animated" data-animation="fadeInUp" data-animation-delay="500">
+								<a href="tel:091-245-1177" class="phone-footer">
+									<i class="fa fa-phone"></i> 091-245-1177
+								</a>
+								<span class="contact-divider">|</span>
+								<a href="mailto:info@i-fit.ly" class="email-footer">
+									<i class="fa fa-envelope"></i> info@i-fit.ly
+								</a>
+							</div>
+							<ul class="social-icons animated" data-animation="fadeInUp" data-animation-delay="600">
+								<li><a href="https://www.facebook.com/share/18hYquTtt6/?mibextid=wwXIfr" class="transparent-grey"><i class="fa-brands fa-facebook-f"></i></a></li>
+								<li><a href="#" class="transparent-grey"><i class="fa-brands fa-twitter"></i></a></li>
+								<li><a href="#" class="transparent-grey"><i class="fa-brands fa-instagram"></i></a></li>
+								<li><a href="#" class="transparent-grey"><i class="fa-brands fa-linkedin-in"></i></a></li>
 							</ul>
-						</div>
-						<div class="col-lg-6 col-md-6">
-							<div class="copyright">Designed by <a href="">Ahmed Naffati</a></div>
+							<div class="totop">
+								<a href="#" class="scrollup"><img src="images/icons/to-top/to-top.png" alt="Scroll to Top" onerror="this.src='images/icons/to-top.png'; this.onerror=null;"></a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+				<div class="dark-texture-02">
+					<div class="container">
+						<div class="row row2">
+							<div class="col-lg-6 col-md-6">
+								<ul class="links">
+									<li><a href="">الرئيسية</a></li>
+									<li><a href="">من نحن</a></li>
+									<li><a href="">الشروط والأحكام</a></li>
+									<li><a href="">سياسة الخصوصية</a></li>
+									<li><a href="">اتصل بنا</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<div class="copyright">designing by<a href="">Ahmed Naffati </a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
 		<!-- /. FOOTER ENDS
 			========================================================================= -->
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

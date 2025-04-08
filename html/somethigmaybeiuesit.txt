@@ -289,7 +289,7 @@
 								<div class="name"><a href="">Jhon doe</a></div>
 								<div class="designation">Chef, Co-Founder</div>
 								<ul class="social-icons">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://www.facebook.com/share/18hYquTtt6/?mibextid=wwXIfr" class="transparent-grey"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
@@ -304,7 +304,7 @@
 								<div class="name"><a href="">MARK HENRY</a></div>
 								<div class="designation">Master Chef</div>
 								<ul class="social-icons">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://www.facebook.com/share/18hYquTtt6/?mibextid=wwXIfr" class="transparent-grey"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
@@ -319,7 +319,7 @@
 								<div class="name"><a href="">SAMEUL LOE</a></div>
 								<div class="designation">Master Grill</div>
 								<ul class="social-icons">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://www.facebook.com/share/18hYquTtt6/?mibextid=wwXIfr" class="transparent-grey"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
@@ -334,7 +334,7 @@
 								<div class="name"><a href="">KAREEM MELO</a></div>
 								<div class="designation">Master Sea Foods</div>
 								<ul class="social-icons">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://www.facebook.com/share/18hYquTtt6/?mibextid=wwXIfr" class="transparent-grey"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>

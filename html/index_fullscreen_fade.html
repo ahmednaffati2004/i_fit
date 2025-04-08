@@ -11,6 +11,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -49,7 +50,7 @@
 			========================================================================= -->
 		<!-- NAVIGATION STARTS
 			========================================================================= -->
-		<nav class="navbar yamm navbar-default navbar-fixed-top black-nav">
+			<nav class="navbar yamm navbar-default navbar-fixed-top black-nav">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -60,29 +61,42 @@
 					<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand visible-sm visible-xs light-logo" href="#"><img src="images/logos/logo-nav.png" alt=""></a>
-                    
+						
 				</div>
+
+				<!-- Contact Info Header -->
+				<div class="contact-info-header">
+					<a href="tel:+218912451177" class="contact-header">
+						<i class="fas fa-phone-alt"></i> 091-245-1177
+					</a>
+					<a href="mailto:info@i-fit.ly" class="email-header">
+						<i class="fas fa-envelope"></i> info@i-fit.ly
+					</a>
+				</div>
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="navbar">
 					<ul class="nav navbar-nav" data-hover="dropdown" data-animations="fadeIn fadeIn fadeInUp fadeInLeft">
 						<li class="pull-left"><a class="navbar-brand hidden-sm hidden-xs light-logo" href="#"><img src="images/logos/logo-nav.png" alt=""></a> <a class="navbar-brand hidden-sm hidden-xs dark-logo" href="#"><img src="images/logos/logo-nav-dark.png" alt=""></a></li>
                        
                       
-                        <li class="social-header pull-right hidden-xs hidden-sm hidden-md">
-                            <a href="tel:091-245-1177" class="transparent-grey contact-header">
-                                <i class="fa fa-phone"></i> 091-245-1177
-                            </a>
-                            <a href="mailto:info@i-fit.ly" class="transparent-grey email-header">
-                                <i class="fa fa-envelope"></i> info@i-fit.ly
-                            </a>
-                            <a href="#" class="transparent-grey"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="transparent-grey"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="transparent-grey"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="transparent-grey"><i class="fa fa-tripadvisor"></i></a>
-                        </li>
+							<li class="social-header pull-right hidden-xs hidden-sm hidden-md">
+								<a href="tel:091-245-1177" class="transparent-grey contact-header">
+									<i class="fa fa-phone"></i> 091-245-1177
+								</a>
+								<a href="mailto:info@i-fit.ly" class="transparent-grey email-header">
+									<i class="fa fa-envelope"></i> info@i-fit.ly
+								</a>
+								<a href="https://www.facebook.com/share/18hYquTtt6/?mibextid=wwXIfr" class="transparent-grey"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="transparent-grey"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/i.fit.ly" class="transparent-grey"><i class="fab fa-instagram"></i></a>
+                           <a href="https://wa.me/0912451177" class="transparent-grey"><i class="fab fa-whatsapp"></i></a>
+							</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">الرئيسية</a>
-							<ul class="dropdown-menu">
+								<a href="index_fullscreen_fade.html" class="nav-menu" data-toggle="" role="" aria-haspopup="" aria-expanded="">
+									<span>الرئيسية</span> <i class="fas fa-home"></i>
+								</a>
+								<!-- <ul class="dropdown-menu">
 								<li class="dropdown-submenu">
 									<a tabindex="-1" href="#">Multiple Page</a>
 									<ul class="dropdown-menu">
@@ -99,8 +113,8 @@
 										<li><a href="index_youtube.html">YouTube Video</a></li>
 										<li><a href="index_viemo.html">Vimeo Video</a></li>
 									</ul>
-								</li>                                
-                                <li class="dropdown-submenu">
+									</li>                          -->       
+									<!-- <li class="dropdown-submenu">
 									<a tabindex="-1" href="#">One Page</a>
 									<ul class="dropdown-menu">
 										<li><a href="index_onepage_fade.html">Fullscreen Fade</a></li>
@@ -117,51 +131,41 @@
 										<li><a href="index_onepage_viemo.html">Vimeo Video</a></li>
 									</ul>
 								</li>
-							</ul>
+								</ul> -->
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">القائمة</a>
+								<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<span>المنيو</span> <i class="fas fa-utensils"></i>
+								</a>
 						  <ul class="dropdown-menu">
-								<li><a href="our-menu.html">Our Menu</a></li>
-								<li><a href="menu-grid.html">Menu Grid</a></li>
-								<li><a href="menu-shown-all.html">Menu Shown All</a></li>
-								<li><a href="menu-details.html">Menu Details</a></li>
+									<li><a href="#">Our Menu</a></li>
+									<li><a href="#">Menu Grid</a></li>
+									<li><a href="#">Menu Shown All</a></li>
+									<li><a href="#">Menu Details</a></li>
 							</ul>
 						</li>
 					  
-					  <li><a href="reservation.html" class="nav-menu">الحجز</a></li>
+						  <li><a href="#" class="nav-menu">
+								<span>اوقات العمل</span> <i class="fas fa-clock"></i>
+							</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">المدونة</a>
-							<ul class="dropdown-menu">
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="blog-list.html">Blog List</a></li>
-								<li><a href="blog-grid.html">Blog Grid</a></li>
-                                <li class="dropdown-submenu">
-									<a tabindex="-1" href="#">Blog Sidebar</a>
-									<ul class="dropdown-menu">
-										<li><a href="blog-left-sidebar.html">Left</a></li>
-										<li><a href="blog-right-sidebar.html">Right</a></li>
-									</ul>
-								</li>
-                                <li class="dropdown-submenu">
-									<a tabindex="-1" href="#">Blog Details</a>
-									<ul class="dropdown-menu">
-										<li><a href="blog-details.html">Slider</a></li>
-										<li><a href="blog-details-image.html">Image</a></li>
-										<li><a href="blog-details-gallery.html">Gallery</a></li>
-										<li><a href="blog-details-lightbox.html">LightBox</a></li>
-										<li><a href="blog-details-youtube.html">Youtube</a></li>
-										<li><a href="blog-details-viemo.html">Viemo</a></li>
-										<li><a href="blog-details-video.html">HTML5 Video</a></li>
-										<li><a href="blog-details-soundcloud.html">Soundcloud</a></li>
-                                        <li><a href="blog-details-sidebar.html">With Sidebar</a></li>
-									</ul>
-								</li>
-							</ul>
+								<a href="lowcarb.html" class="nav-menu" data-toggle="" role="" aria-haspopup="" aria-expanded="">
+									<span>اشتراكات الوجبات</span> <i class="fas fa-leaf"></i>
+								</a>
+								<!-- <ul class="dropdown-menu">
+									<li><a href="lowcarb.html">Low Carb</a></li>
+									<li><a href="#">Keto Diet</a></li>
+									<li><a href="#">Body building diet</a></li>
+									<li><a href="#">Carb cycle diet</a></li>
+									<li><a href="#">Weight gain diet</a></li>
+									
+								</ul> -->
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">المتجر</a>
-					  <ul class="dropdown-menu">
+								<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<span>فروعنا</span> <i class="fas fa-map-marker-alt"></i>
+								</a>
+						 <!--      <ul class="dropdown-menu">
                                 <li><a href="shop.html">Shop</a></li>
                                 <li><a href="shop-sidebar.html">With Sidebar</a></li>
 								<li><a href="shop-cart.html">Carts</a></li>
@@ -169,21 +173,25 @@
 								<li><a href="shop-checkout.html">Checkout</a></li>
 								<li><a href="shop-my-account.html">My Account</a></li>
 								<li><a href="login.html">Login</a></li>
-							</ul>
+								</ul> -->
 						</li>
-				    <li class="visible-xs"><a href="#">SHOPPING CART</a></li>
+						
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">فروعنا </a>
-							<ul class="dropdown-menu">
+								<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<span>وظائف</span> <i class="fas fa-briefcase"></i>
+								</a>
+								<!-- <ul class="dropdown-menu">
                                <li><a href="about-us.html">About</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
 								<li><a href="our-team.html">Team</a></li>
 								<li><a href="events.html">Events</a></li>
 								<li><a href="error-page.html">Error Page</a></li>
 								<li><a href="coming-soon.html">Coming Soon</a></li>
-							</ul>
+								</ul> -->
 						</li>
-					  <li><a href="contact-us.html" class="nav-menu">اتصل بنا</a></li>
+						  <li><a href="contact-us.html" class="nav-menu">
+								<span>اتصل بنا</span> <i class="fas fa-envelope"></i>
+							</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -472,9 +480,8 @@
 			</div>
 			<!-- /. ABOUT US ENDS
 				========================================================================= -->	
-			<!-- OPENING HOURS STARTS
-				========================================================================= -->	
-			<div class="parallax-1 opening-hours white-bg">
+			<!-- OPENING HOURS STARTS -->
+			<div class="parallax-1 opening-hours">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -488,29 +495,29 @@
 					</div>
 					<div class="row no-gutter-3 row1 animated" data-animation="fadeInUp" data-animation-delay="800">
 						<div class="row-height">
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height col-sm-middle">
-								<div class="inside"><img src="images/slider/214.jpg" class="img-responsive center-block" alt=""></div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height">
+								<div class="inside">
+									<img src="images/slider/214.jpg" class="img-responsive" alt="Launch Menu">
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height col-sm-middle">
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height">
 								<div class="inside">
 									<div class="white-block">
 										<div class="icon"><i class="icon-drink"></i></div>
 										<div class="caption">Launch</div>
-										<!-- <div class="day">Everyday</div>
-										<div class="timing">13:00 - 15:00</div> -->
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height col-sm-middle">
-								<div class="inside"><img src="images/slider/213.jpg" class="img-responsive center-block" alt=""></div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height">
+								<div class="inside">
+									<img src="images/slider/213.jpg" class="img-responsive" alt="Desert Menu">
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height col-sm-middle">
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height">
 								<div class="inside">
 									<div class="white-block">
 										<div class="icon"><i class="icon-food"></i></div>
 										<div class="caption">Desert</div>
-										<!-- <div class="day">Everyday</div>
-										<div class="timing">19:00 - 22:00</div> -->
 									</div>
 								</div>
 							</div>
@@ -518,37 +525,36 @@
 					</div>
 					<div class="row no-gutter-3 row2 animated" data-animation="fadeInDown" data-animation-delay="800">
 						<div class="row-height">
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height col-sm-middle">
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height">
 								<div class="inside">
 									<div class="dark-block">
 										<div class="icon"><i class="icon-breakfast"></i></div>
 										<div class="caption">Breakfast</div>
-										<!-- <div class="day">Everyday</div>
-										<div class="timing">08:00 - 10:00</div> -->
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height col-sm-middle">
-								<div class="inside"><img src="images/slider/212.jpg" class="img-responsive center-block" alt=""></div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height">
+								<div class="inside">
+									<img src="images/slider/212.jpg" class="img-responsive" alt="Breakfast Menu">
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height col-sm-middle">
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height">
 								<div class="inside">
 									<div class="dark-block">
 										<div class="icon"><i class="icon-dinner"></i></div>
 										<div class="caption">Dinner</div>
-										<!-- <div class="day">Everyday</div>
-										<div class="timing">19:00 - 22:00</div> -->
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height col-sm-middle">
-								<div class="inside"><img src="images/slider/215.jpg" class="img-responsive center-block" alt=""></div>
+							<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 col-sm-height">
+								<div class="inside">
+									<img src="images/slider/215.jpg" class="img-responsive" alt="Dinner Menu">
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="row reservation-number">
 						<div class="col-lg-12 animated" data-animation="flipInX" data-animation-delay="600">
-							<div class="icon"><i class="icon-divider"></i></div>
 							<div class="contact-info">
 								<div class="caption">اتصل بنا</div>
 								<div class="contact-details">
@@ -566,26 +572,10 @@
 							</div>
 						</div>
 					</div>
-			
-						
+			<!-- OPENING HOURS ENDS -->
 			<!-- NEWSLETTER STARTS
 				========================================================================= -->  
-			<div class="container-fluid newsletter">
-				<div class="row row1">
-					<div class="col-lg-4 col-lg-offset-4">
-						<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
-							<h1>STAY UP TO DATE</h1>
-							<div class="description">Sign up to  newsletter for the latest on all things Suitsupply</div>
-						</div>
-						<form class="form-inline animated" data-animation="fadeInUp" data-animation-delay="600">
-							<div class="form-group">							
-								<input type="email" class="form-control" id="newsletter" placeholder="Enter you e-mail Address">
-							</div>
-							<button type="submit" class="btn btn-default"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-						</form>
-					</div>
-				</div>
-			</div>
+			
 			<!-- /. NEWSLETTER STARTS
 				========================================================================= -->  
 		</div>
@@ -595,7 +585,7 @@
 			<div class="container-fluid">
 				<div class="row row1">
 					<div class="col-lg-8 col-lg-offset-2">
-						<div class="logo animated" data-animation="fadeInUp" data-animation-delay="400"><img src="images/logos/f-logo.png" class="img-responsive center-block" alt=""></div>
+						<div class="logo animated" data-animation="fadeInUp" data-animation-delay="400"><img src="images/logos/f-logo.png" class="img-responsive center-block" alt="Footer Logo" onerror="this.src='images/logos/logo-nav.png'; this.onerror=null;"></div>
 						<div class="footer-contact animated" data-animation="fadeInUp" data-animation-delay="500">
 							<a href="tel:091-245-1177" class="phone-footer">
 								<i class="fa fa-phone"></i> 091-245-1177
@@ -606,13 +596,13 @@
 							</a>
 						</div>
 						<ul class="social-icons animated" data-animation="fadeInUp" data-animation-delay="600">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.facebook.com/share/18hYquTtt6/?mibextid=wwXIfr" class="transparent-grey"><i class="fa-brands fa-facebook-f"></i></a></li>
+							<li><a href="#" class="transparent-grey"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="#" class="transparent-grey"><i class="fa-brands fa-instagram"></i></a></li>
+							<li><a href="#" class="transparent-grey"><i class="fa-brands fa-linkedin-in"></i></a></li>
 						</ul>
 						<div class="totop">
-							<a href="#" class="scrollup"><img src="images/icons/to-top/to-top.png" alt=""></a>
+							<a href="#" class="scrollup"><img src="images/icons/to-top/to-top.png" alt="Scroll to Top" onerror="this.src='images/icons/to-top.png'; this.onerror=null;"></a>
 						</div>
 					</div>
 				</div>
