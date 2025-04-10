@@ -93,21 +93,10 @@ $(document).ready(function() {
 	
 	/************************************************************************************ PAGE ANIMATED ITEMS STARTS */
 
-    $('.animated').appear(function () {
+    $('.animated').each(function() {
         var elem = $(this);
         var animation = elem.data('animation');
-        if (!elem.hasClass('visible')) {
-            var animationDelay = elem.data('animation-delay');
-            if (animationDelay) {
-
-                setTimeout(function () {
-                    elem.addClass(animation + " visible");
-                }, animationDelay);
-
-            } else {
-                elem.addClass(animation + " visible");
-            }
-        }
+        elem.addClass(animation + " visible");
     });
 
 	/************************************************************************************ PAGE ANIMATED ITEMS ENDS */
@@ -116,21 +105,15 @@ $(document).ready(function() {
 
     $('.nav').onePageNav({
         filter: ':not(.external)',
-        begin: function() {
-            console.log('start')
-        },
-        end: function() {
-            console.log('stop')
-        }
+        begin: function() {},
+        end: function() {}
     });
 	
 	/************************************************************************************ ONEPAGE NAV ENDS */
 	
 	/************************************************************************************ DATE PICKER STARTS */
 
-    $(function() {
-        $("#datepicker").datepicker();
-    });
+    $("#datepicker").datepicker();
 	
 	/************************************************************************************ DATE PICKER ENDS */
 
@@ -138,16 +121,16 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
+            $('.scrollup').show();
         } else {
-            $('.scrollup').fadeOut();
+            $('.scrollup').hide();
         }
     });
 
     $('.scrollup').on("click", function() {
         $("html, body").animate({
             scrollTop: 0
-        }, 600);
+        }, 300);
         return false;
     });
    
@@ -197,17 +180,20 @@ $(document).ready(function() {
 
     /************************************************************************************ DROPDOWN MENU ENDS */
 
+    // Remove preloader immediately
+    $('#status').hide();
+    $('#preloader').hide();
+    $('body').removeClass('loading').addClass('loaded');
+
 });
 
 /************************************************************************************ STICKY NAV STARTS */
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 1) {
-        $('nav.fill-black').addClass("sticky");
-        $('nav.fill-black').removeClass("normal");
+        $('nav.fill-black').addClass("sticky").removeClass("normal");
     } else {
-        $('nav.fill-black').removeClass("sticky");
-        $('nav.fill-black').addClass("normal");
+        $('nav.fill-black').removeClass("sticky").addClass("normal");
     }
 });
 

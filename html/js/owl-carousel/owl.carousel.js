@@ -1670,7 +1670,7 @@
 	}
 
 	/**
-	 * Checks the availability of some browser features.
+	 * Checks the availability of some browser .
 	 * @protected
 	 */
 	Owl.prototype.browserSupport = function() {

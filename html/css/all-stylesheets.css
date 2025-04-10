@@ -65,259 +65,1342 @@ Primary use:	Food & Restaurant Template
 @import url("../fonts/icomoon/style.css");
 
 /* Enhanced Mobile Navigation Styles */
-@media (max-width: 991px) {
-    .navbar {
-        padding: 0;
-        background: rgba(255, 255, 255, 0.98) !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar-header {
-        padding: 5px 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: #000000;
-    }
-
-    /* Animated Hamburger Icon */
-    .navbar-toggle {
-        border: none;
-        background: transparent !important;
-        margin: 0;
-        padding: 10px;
-        transition: all 0.4s ease;
-        position: relative;
-        height: 40px;
-        width: 40px;
-    }
-
-    .navbar-toggle .icon-bar {
-        background-color: #029A0C !important;
-        width: 25px;
-        height: 2px;
-        transition: all 0.4s ease;
-        position: absolute;
-        left: 7.5px;
-    }
-
-    .navbar-toggle .icon-bar:nth-child(1) {
-        top: 10px;
-        transform-origin: left center;
-    }
-
-    .navbar-toggle .icon-bar:nth-child(2) {
-        top: 18px;
-        transform-origin: left center;
-    }
-
-    .navbar-toggle .icon-bar:nth-child(3) {
-        top: 26px;
-        transform-origin: left center;
-    }
-
-    .navbar-toggle.collapsed .icon-bar:nth-child(1) {
-        transform: rotate(45deg);
-        top: 12px;
-        left: 9px;
-    }
-
-    .navbar-toggle.collapsed .icon-bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .navbar-toggle.collapsed .icon-bar:nth-child(3) {
-        transform: rotate(-45deg);
-        top: 24px;
-        left: 9px;
-    }
-
-    /* Contact Info Animation */
-    .contact-info-header {
-        background: #000000;
-        padding: 10px 15px;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        transform: translateY(-100%);
-        animation: slideDown 0.5s forwards;
-    }
-
-    @keyframes slideDown {
-        to {
-            transform: translateY(0);
-        }
-    }
-
-    .contact-header,
-    .email-header {
-        display: flex !important;
-        align-items: center;
-        color: #ffffff !important;
-        font-size: 14px;
-        padding: 8px 15px;
-        border-radius: 25px;
-        background: rgba(2, 154, 12, 0.1);
-        transition: all 0.3s ease;
-    }
-
-    .contact-header i,
-    .email-header i {
-        margin-right: 8px;
-        color: #029A0C !important;
-        font-size: 16px;
-    }
-
-    .contact-header:hover,
-    .email-header:hover {
-        background: rgba(2, 154, 12, 0.2);
-        transform: translateY(-2px);
-    }
-
-    /* Navigation Menu Animation */
-    .navbar-collapse {
-        background: #000000;
-        max-height: calc(100vh - 120px);
-        overflow-y: auto;
-        padding: 0;
-        border: none;
-    }
-
-    .navbar-nav {
-        margin: 0;
-        padding: 10px 0;
-    }
-
-    .nav > li {
-        transform: translateX(-100%);
-        opacity: 0;
-        animation: slideIn 0.5s forwards;
-    }
-
-    @keyframes slideIn {
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-
-    .nav > li:nth-child(1) { animation-delay: 0.1s; }
-    .nav > li:nth-child(2) { animation-delay: 0.2s; }
-    .nav > li:nth-child(3) { animation-delay: 0.3s; }
-    .nav > li:nth-child(4) { animation-delay: 0.4s; }
-    .nav > li:nth-child(5) { animation-delay: 0.5s; }
-
-    .nav-menu {
-        color: #ffffff !important;
-        font-size: 16px;
-        padding: 12px 20px !important;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        transition: all 0.3s ease;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .nav-menu i {
-        margin-left: 10px;
-        color: #029A0C;
-        font-size: 18px;
-    }
-
-    .nav-menu:hover {
-        background: rgba(2, 154, 12, 0.1) !important;
-        color: #029A0C !important;
-        padding-right: 25px !important;
-    }
-
-    /* Dropdown Styles */
-    .dropdown-menu {
-        background: #000000 !important;
-        border: none;
-        box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.2);
-        padding: 0;
-    }
-
-    .dropdown-menu > li > a {
-        color: #ffffff;
-        padding: 10px 20px;
-        text-align: right;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease;
-    }
-
-    .dropdown-menu > li > a:hover {
-        background: rgba(2, 154, 12, 0.1);
-        color: #029A0C;
-        padding-right: 25px;
-    }
+/* Modern Mobile Navigation 2024 */
+/* Modern Mobile Navigation 2024 - New Design */
+/* i_fit Navbar 2024 */
+/* ======= MAIN STRUCTURE ======= */
+/* ======= MAIN STRUCTURE ======= */
+.navbar {
+    padding: 8px 0;
+    background: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 997;
 }
 
-/* Additional Mobile Optimizations */
-@media (max-width: 480px) {
-    .navbar-brand img {
-        height: 30px;
-    }
-
-    .nav-menu {
-        font-size: 15px;
-        padding: 12px 15px !important;
-    }
-
-    .dropdown-menu > li > a {
-        font-size: 13px;
-        padding: 10px 20px;
-    }
-
-    .social-header {
-        flex-wrap: wrap;
-        padding: 10px 0;
-    }
-
-    .social-header a {
-        margin: 5px 10px;
-    }
-
-    .contact-info-header {
-        flex-direction: column;
-        gap: 8px;
-        align-items: stretch;
-    }
-
-    .contact-header,
-    .email-header {
-        font-size: 13px;
-        justify-content: center;
-    }
-
-    .nav-menu {
-        font-size: 15px;
-        padding: 10px 15px !important;
-    }
-
-    .nav-menu i {
-        font-size: 16px;
-    }
-
-    .dropdown-menu > li > a {
-        font-size: 14px;
-        padding: 8px 15px;
-    }
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 15px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
-/* Basic Image Styles */
-.inside {
-    position: relative;
+/* ======= LOGO ======= */
+.navbar-brand {
+    padding: 0;
     margin: 0;
+    display: flex;
+    align-items: center;
+    min-width: 120px;
+    margin-top: -10px;
+    position: relative;
+    top: -3px;
+}
+
+.navbar-brand img {
+    max-height: 65px;
+    width: auto;
+    transition: all 0.3s ease;
+    vertical-align: middle;
+}
+
+/* ======= CONTACT INFO ======= */
+.contact-info-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.contact-header,
+.email-header {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+    color: #666 !important;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+}
+
+.contact-header:hover,
+.email-header:hover {
+    color: #52b788 !important;
+}
+
+.contact-header i,
+.email-header i {
+    color: #52b788;
+    font-size: 15px;
+}
+
+/* ======= SOCIAL ICONS ======= */
+.social-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+
+.social-header a {
+    color: #666;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-header a:hover {
+    color: #52b788;
+    transform: translateY(-2px);
+}
+
+/* ======= MAIN NAVIGATION ======= */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-right: 0;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+
+.nav > li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 12px 10px 0;
+}
+
+.nav-menu {
+    display: flex !important;
+    align-items: center;
+    gap: 4px;
+    color: #666 !important;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0;
+    transition: all 0.3s ease;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.nav-menu i {
+    font-size: 15px;
+    margin-left: 4px;
+    color: #52b788;
+}
+
+.nav-menu:hover,
+.nav > li:hover > .nav-menu {
+    color: #52b788 !important;
+    text-decoration: none;
+}
+
+/* ======= DROPDOWN MENU ======= */
+.dropdown-menu {
+    margin: 0;
+    padding: 6px 0;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+    transition: all 0.3s ease;
+    border: 0;
+    border-radius: 4px;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    right: 0;
+    left: auto;
+    text-align: right;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-menu > li {
+    position: relative;
     padding: 0;
 }
 
-.inside img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.dropdown-menu > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    transition: all 0.3s ease;
 }
+
+.dropdown-menu > li > a i {
+    font-size: 12px;
+    margin-left: 3px;
+    margin-right: 0;
+    color: #52b788;
+}
+
+.dropdown-menu > li > a:hover {
+    color: #52b788;
+    background: #f6f9ff;
+    padding-left: 16px;
+}
+
+/* ======= CONTACT US LINK FIX ======= */
+.contact-us-link {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #666 !important;
+}
+
+.contact-us-link:hover {
+    color: #52b788 !important;
+}
+
+/* ======= ENHANCED MOBILE NAVIGATION ======= */
+@media (max-width: 991px) {
+    .navbar-header {
+        padding: 12px;
+        flex-wrap: wrap; /* السماح بالتفاف العناصر */
+        justify-content: space-between;
+    }
+
+    .navbar-brand {
+        margin-top: 0;
+        top: 0;
+        margin-right: 0;
+        order: 1; /* ترتيب العناصر */
+        flex: 0 0 auto; /* منع التمدد */
+    }
+
+    .navbar-brand img {
+        max-height: 50px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* تأثير انتقالي أكثر جاذبية */
+    }
+    
+    /* إظهار معلومات الاتصال في الهاتف */
+    .mobile-contact-visible {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        order: 2; /* ترتيب العناصر */
+        flex: 1; /* السماح بالتمدد */
+        justify-content: flex-end;
+    }
+    
+    .mobile-contact-visible .contact-header,
+    .mobile-contact-visible .email-header {
+        font-size: 0; /* إخفاء النص */
+        padding: 8px;
+        margin: 0;
+        background: #f6f9ff;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .mobile-contact-visible .contact-header i,
+    .mobile-contact-visible .email-header i {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    .mobile-contact-visible .contact-header:hover,
+    .mobile-contact-visible .email-header:hover {
+        transform: scale(1.1);
+        background: #e6f3ed;
+    }
+
+    .navbar-toggle {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border-radius: 50%;
+        background: #ffffff;
+        border: none;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: 1002;
+        margin: 0;
+        cursor: pointer;
+    }
+    
+    .navbar-toggle .icon-bar {
+        width: 22px;
+        height: 2px;
+        background: #029A0C;
+        position: relative;
+        border-radius: 4px;
+        transform-origin: center;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .navbar-toggle:hover {
+        transform: translateY(-50%) scale(1.05);
+    }
+    
+    .navbar-toggle:active {
+        transform: translateY(-50%) scale(0.95);
+    }
+    
+    .navbar-toggle.active {
+        background: #ffffff;
+        transform: translateY(-50%) rotate(180deg);
+    }
+    
+    .navbar-toggle.active .icon-bar:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+        width: 20px;
+    }
+    
+    .navbar-toggle.active .icon-bar:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-10px) scale(0);
+    }
+    
+    .navbar-toggle.active .icon-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+        width: 20px;
+    }
+    
+    /* تحسينات للشاشات الصغيرة */
+    @media (max-width: 480px) {
+        .navbar-toggle {
+            width: 36px;
+            height: 36px;
+            right: 7px;
+            gap: 5px;
+        }
+    
+        .navbar-toggle .icon-bar {
+            width: 18px;
+            height: 2px;
+        }
+    
+        .navbar-toggle.active .icon-bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+            width: 16px;
+        }
+    
+        .navbar-toggle.active .icon-bar:nth-child(2) {
+            transform: translateX(-8px) scale(0);
+        }
+    
+        .navbar-toggle.active .icon-bar:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+            width: 16px;
+        }
+    }
+    
+    /* تأثير القائمة المنسدلة */
+    
+    
+    .navbar-collapse.in {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 55px;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 55px);
+        background: #ffffff;
+        padding: 0;
+        z-index: 1001;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin: 0;
+    }
+    .navbar-collapse.in {
+        right: auto;
+        left: 0;
+        display: block !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav > li {
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #f6f9ff;
+        transform: translateX(-20px);
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+    
+    /* تأثير انتقالي للعناصر عند فتح القائمة */
+    .navbar-collapse.in .nav > li {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    /* تأخير تدريجي لكل عنصر */
+    .navbar-collapse.in .nav > li:nth-child(1) { transition-delay: 0.1s; }
+    .navbar-collapse.in .nav > li:nth-child(2) { transition-delay: 0.15s; }
+    .navbar-collapse.in .nav > li:nth-child(3) { transition-delay: 0.2s; }
+    .navbar-collapse.in .nav > li:nth-child(4) { transition-delay: 0.25s; }
+    .navbar-collapse.in .nav > li:nth-child(5) { transition-delay: 0.3s; }
+    .navbar-collapse.in .nav > li:nth-child(6) { transition-delay: 0.35s; }
+    .navbar-collapse.in .nav > li:nth-child(7) { transition-delay: 0.4s; }
+
+    .nav-menu {
+        padding: 15px;
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-menu:hover {
+        background: #f6f9ff;
+        padding-right: 20px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+        padding-right: 0;
+        padding-left: 15px;
+        display: none;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+
+    .dropdown.open .dropdown-menu {
+        display: block;
+        max-height: 500px; /* قيمة كبيرة بما يكفي للمحتوى */
+    }
+    
+    .dropdown-menu > li {
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .dropdown.open .dropdown-menu > li {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: 0.2s;
+    }
+
+    .contact-info-header,
+    .social-header {
+        display: none;
+    }
+
+    /* Mobile Contact Info */
+    .mobile-contact-info {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #f6f9ff;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: all 0.4s ease;
+        transition-delay: 0.4s;
+    }
+    
+    .navbar-collapse.in .mobile-contact-info {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .mobile-contact-info .contact-header,
+    .mobile-contact-info .email-header {
+        padding: 10px 15px;
+        justify-content: flex-start;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .mobile-contact-info .contact-header:hover,
+    .mobile-contact-info .email-header:hover {
+        background: #f6f9ff;
+        padding-right: 20px;
+    }
+
+    /* Mobile Social Icons */
+    .mobile-social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 20px;
+        padding: 15px 0;
+        border-top: 1px solid #f6f9ff;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: all 0.4s ease;
+        transition-delay: 0.5s;
+    }
+    
+    .navbar-collapse.in .mobile-social-icons {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .mobile-social-icons a {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        background: #f6f9ff;
+        border-radius: 50%;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transform: scale(0.9);
+    }
+
+    .mobile-social-icons a:hover {
+        color: #fff;
+        background: #52b788;
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-toggle {
+        width: 40px;
+        height: 40px;
+        right: 10px;
+    }
+    
+    .navbar-toggle .icon-bar {
+        width: 20px;
+    }
+    
+    .navbar-toggle.active .icon-bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .navbar-toggle.active .icon-bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
+/* ======= EXTRA SMALL DEVICES ======= */
+@media (max-width: 480px) {
+    .navbar-header {
+        padding: 10px;
+    }
+
+    .navbar-brand img {
+        max-height: 45px;
+    }
+    
+    .mobile-contact-visible .contact-header,
+    .mobile-contact-visible .email-header {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .mobile-contact-visible .contact-header i,
+    .mobile-contact-visible .email-header i {
+        font-size: 14px;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        top: 65px;
+    }
+}
+
+/* ======= ADDITIONAL FIXES FOR LINK VISIBILITY ======= */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .nav > li {
+        padding: 10px 10px 10px 0;
+    }
+    
+    .nav-menu {
+        font-size: 12px;
+    }
+    
+    .contact-header,
+    .email-header {
+        font-size: 12px;
+    }
+    
+    .social-header {
+        gap: 10px;
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+    
+    .navbar-brand img {
+        max-height: 60px;
+    }
+}
+
+/* ======= ENSURE ALL LINKS ARE VISIBLE ======= */
+.navbar-nav > li > a,
+.navbar-nav > li > .nav-menu {
+    white-space: nowrap;
+    overflow: visible;
+    padding: 5px 8px;
+}
+
+/* ======= FIX FOR DROPDOWN POSITIONING ======= */
+.nav > li.dropdown {
+    position: relative;
+}
+
+.nav > li.dropdown > .dropdown-menu {
+    top: calc(100% + 5px);
+    right: 0;
+}
+
+/* ======= ENSURE CONTACT US LINK IS VISIBLE ======= */
+.navbar-nav > li:last-child {
+    margin-left: 0;
+}
+
+/* ======= BETTER SPACE UTILIZATION ======= */
+.navbar-header {
+    padding-right: 30px;
+}
+
+.navbar-brand {
+    margin-right: 20px;
+}
+
+.contact-info-header {
+    margin-right: 25px;
+}
+
+.social-header {
+    margin-right: 25px;
+    padding-right: 25px;
+}
+
+.navbar-nav {
+    margin-right: 0;
+}
+
+.navbar-nav > li > a,
+.navbar-nav > li > .nav-menu {
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+/* ======= ANIMATIONS AND TRANSITIONS ======= */
+/* تأثيرات انتقالية عامة */
+.navbar-brand img,
+.nav-menu,
+.contact-header,
+.email-header,
+.social-header a,
+.dropdown-menu,
+.navbar-toggle .icon-bar {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* تأثير نبض للشعار عند التحميل */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.navbar-brand img {
+    animation: pulse 1.5s ease-in-out;
+}
+
+/* تأثير ظهور تدريجي للعناصر عند التحميل */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.navbar-nav > li {
+    animation: fadeInDown 0.5s ease-out forwards;
+    animation-delay: calc(0.1s * var(--item-index, 1));
+    opacity: 0;
+}
+
+.navbar-nav > li:nth-child(1) { --item-index: 1; }
+.navbar-nav > li:nth-child(2) { --item-index: 2; }
+.navbar-nav > li:nth-child(3) { --item-index: 3; }
+.navbar-nav > li:nth-child(4) { --item-index: 4; }
+.navbar-nav > li:nth-child(5) { --item-index: 5; }
+.navbar-nav > li:nth-child(6) { --item-index: 6; }
+.navbar-nav > li:nth-child(7) { --item-index: 7; }
+
+/* تحسينات النافبار للهواتف */
+@media (max-width: 991px) {
+    .navbar-header {
+        padding: 8px 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 65px;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+        order: 2;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar-brand img {
+        max-height: 45px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    /* تحسين زر القائمة */
+    .navbar-toggle {
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        border-radius: 50%;
+        background: #ffffff;
+        border: none;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: 1002;
+        margin: 0;
+        box-shadow: 0 2px 8px rgba(2, 154, 12, 0.15);
+    }
+    
+    .navbar-toggle:hover {
+        background: rgba(82, 183, 136, 0.2);
+    }
+
+    .navbar-toggle .icon-bar {
+        width: 24px;
+        height: 2px;
+        margin: 3px 0;
+        background: #52b788 !important;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-toggle.active {
+        background: rgba(82, 183, 136, 0.2);
+    }
+
+    .navbar-toggle.active .icon-bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .navbar-toggle.active .icon-bar:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    .navbar-toggle.active .icon-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* تحسين معلومات الاتصال في الهاتف */
+    .mobile-contact-visible {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        order: 3;
+    }
+    
+    .mobile-contact-visible .contact-header,
+    .mobile-contact-visible .email-header {
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        margin: 0;
+        background: rgba(82, 183, 136, 0.1);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-contact-visible .contact-header i,
+    .mobile-contact-visible .email-header i {
+        font-size: 18px;
+        color: #52b788;
+        margin: 0;
+    }
+    
+    .mobile-contact-visible .contact-header:hover,
+    .mobile-contact-visible .email-header:hover {
+        background: rgba(82, 183, 136, 0.2);
+        transform: translateY(-2px);
+    }
+
+    /* تحسين القائمة المنسدلة */
+    .navbar-collapse {
+        position: fixed;
+        top: 65px;
+        right: -100%;
+        width: 280px;
+        height: calc(100vh - 65px);
+        background: #ffffff;
+        padding: 15px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        overflow-y: auto;
+        z-index: 999;
+    }
+    
+    .navbar-collapse.in {
+        right: 0;
+    }
+}
+
+/* تحسينات إضافية للهواتف الصغيرة */
+@media (max-width: 480px) {
+    .navbar-header {
+        height: 60px;
+        padding: 5px 12px;
+    }
+    
+    .navbar-brand img {
+        max-height: 40px;
+    }
+    
+    .navbar-toggle {
+        width: 36px;
+        height: 36px;
+        padding: 6px;
+    }
+    
+    .navbar-toggle .icon-bar {
+        width: 22px;
+    }
+    
+    .mobile-contact-visible .contact-header,
+    .mobile-contact-visible .email-header {
+        width: 34px;
+        height: 34px;
+    }
+    
+    .mobile-contact-visible .contact-header i,
+    .mobile-contact-visible .email-header i {
+        font-size: 16px;
+    }
+    
+    .navbar-collapse {
+        top: 60px;
+        width: 100%;
+    }
+}
+
+/* تحسين الأزرار في القائمة المنسدلة */
+@media (max-width: 991px) {
+    .nav > li {
+        margin: 5px 0;
+        border-bottom: 1px solid rgba(82, 183, 136, 0.1);
+    }
+    
+    .nav-menu {
+        padding: 12px 15px !important;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-menu:hover {
+        background: rgba(82, 183, 136, 0.1);
+        padding-right: 20px !important;
+    }
+    
+    .nav-menu i {
+        color: #52b788;
+        margin-left: 8px;
+    }
+}
+
+
+/* تحسين القائمة المنسدلة في الجوال */
+@media (max-width: 991px) {
+    /* تحسين زر القائمة */
+    .navbar-toggle {
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        border-radius: 50%;
+        background: #ffffff;
+        border: none;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: 1002;
+        margin: 0;
+        box-shadow: 0 2px 8px rgba(2, 154, 12, 0.15);
+    }
+    
+    .navbar-toggle:hover {
+        background: rgba(2, 154, 12, 0.15);
+    }
+
+    .navbar-toggle .icon-bar {
+        width: 26px;
+        height: 2px;
+        margin: 4px 0;
+        background: #029A0C !important;
+        transition: all 0.4s ease;
+    }
+
+    .navbar-toggle.active {
+        background: #029A0C;
+    }
+
+    .navbar-toggle.active .icon-bar {
+        background: #ffffff !important;
+    }
+
+    /* القائمة بملء الشاشة */
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.98);
+        padding: 80px 25px 25px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+    }
+
+    .navbar-collapse.in {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    /* تنسيق عناصر القائمة */
+    .navbar-nav {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav > li {
+        margin: 0;
+        padding: 0;
+        border: none;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.4s ease;
+    }
+
+    .navbar-collapse.in .nav > li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* تأخير ظهور العناصر */
+    .navbar-collapse.in .nav > li:nth-child(1) { transition-delay: 0.1s; }
+    .navbar-collapse.in .nav > li:nth-child(2) { transition-delay: 0.15s; }
+    .navbar-collapse.in .nav > li:nth-child(3) { transition-delay: 0.2s; }
+    .navbar-collapse.in .nav > li:nth-child(4) { transition-delay: 0.25s; }
+    .navbar-collapse.in .nav > li:nth-child(5) { transition-delay: 0.3s; }
+
+    @media (max-width: 991px) {
+        .navbar {
+            background: #ffffff;
+            height: 55px;
+            border-bottom: 2px solid #029A0C;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 0;
+        }
+    
+        .navbar-header {
+            padding: 0;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: #ffffff;
+        }
+    
+        .navbar-brand {
+            position: absolute;
+            left: 50%;
+            
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .navbar-brand img {
+            height: 62px;
+            width: auto;
+            display: block;
+        }
+    
+        /* تحسين زر القائمة */
+        .navbar-toggle {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            border-radius: 50%;
+            background: #ffffff;
+            border: none;
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.3s ease;
+            z-index: 1002;
+            margin: 0;
+        }
+    
+        .navbar-toggle .icon-bar {
+            width: 22px;
+            height: 2px;
+            background: #029A0C;
+            position: relative;
+            border-radius: 2px;
+        }
+    
+        .navbar-toggle:hover {
+            background: #ffffff;
+        }
+        
+        .navbar-toggle:hover .icon-bar {
+            background: #029A0C;
+        }
+        
+        .navbar-toggle.active {
+            background: #ffffff;
+        }
+        
+        .navbar-toggle.active .icon-bar {
+            background: #029A0C;
+        }
+        
+    
+        .navbar-toggle.active .icon-bar:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+    
+        .navbar-toggle.active .icon-bar:nth-child(2) {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+    
+        .navbar-toggle.active .icon-bar:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    
+        /* تحسين القائمة المنسدلة */
+        .navbar-collapse {
+            position: fixed;
+            top: 55px;
+            right: 0;
+            width: 100%;
+            height: calc(100vh - 55px);
+            background: #ffffff;
+            padding: 15px;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(100%);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding-left: 0;
+            padding-right: 0;
+        }
+    
+        .navbar-collapse.in {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+    
+        /* تنسيق عناصر القائمة */
+        .navbar-nav {
+            width: 100%;
+            max-width: 520px;
+            padding: 0;
+            margin: 0 auto;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .nav > li {
+            margin: 0;
+            width: 100%;
+            transform: translateX(20px);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+    
+        .navbar-collapse.in .nav > li {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    
+        /* تنسيق الروابط */
+        .nav-menu {
+            padding: 12px 15px !important;
+            color: #029A0C !important;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 8px;
+            background: #ffffff;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            border: 1.5px solid #029A0C;
+            width: 100%;
+            gap: 10px;
+            text-align: center;
+        }
+    
+        .nav-menu i {
+            color: #029A0C;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+    
+        .nav-menu:hover {
+            background: #029A0C;
+            color: #ffffff !important;
+            transform: translateY(-2px);
+        }
+    
+        .nav-menu:hover i {
+            color: #ffffff;
+        }
+    
+        /* تحسين القائمة المنسدلة في الجوال */
+        .dropdown-menu {
+            position: static !important;
+            width: 100%;
+            background: #ffffff !important;
+            border: none !important;
+            box-shadow: none !important;
+            padding: 5px 0 !important;
+            margin: 5px 0 !important;
+            display: none;
+        }
+    
+        .dropdown.open .dropdown-menu {
+            display: block;
+        }
+    
+        .dropdown-menu > li > a {
+            padding: 12px 15px !important;
+            color: #029A0C !important;
+            font-size: 14px;
+            background: #ffffff !important;
+            border-radius: 8px;
+            margin: 5px 0;
+            border: 1.5px solid #029A0C;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            gap: 10px;
+            text-align: center;
+        }
+    
+        .dropdown-menu > li > a i {
+            color: #029A0C;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+    
+        .dropdown-menu > li > a:hover {
+            background: #029A0C !important;
+            color: #ffffff !important;
+            transform: translateY(-2px);
+        }
+    
+        .dropdown-menu > li > a:hover i {
+            color: #ffffff !important;
+        }
+    
+        /* تحسينات للشاشات الصغيرة جداً */
+        @media (max-width: 480px) {
+            .navbar {
+                height: 50px;
+            }
+    
+            .navbar-header {
+                height: 50px;
+            }
+    
+            .navbar-brand img {
+                height: 42px; /* أو الحجم اللي يناسبك */
+            }
+            
+            
+    
+            .navbar-toggle {
+                width: 36px;
+                height: 36px;
+                right: 8px;
+            }
+    
+            .navbar-toggle .icon-bar {
+                width: 20px;
+            }
+    
+            .navbar-collapse {
+                top: 50px;
+                padding: 12px;
+                height: calc(100vh - 50px);
+            }
+    
+            .navbar-nav {
+                max-width: 280px;
+                gap: 8px;
+            }
+    
+            .nav-menu {
+                padding: 10px 12px !important;
+                font-size: 14px;
+                gap: 8px;
+            }
+    
+            .nav-menu i {
+                font-size: 15px;
+            }
+    
+            .dropdown-menu > li > a {
+                padding: 10px 12px !important;
+                font-size: 13px;
+                gap: 8px;
+            }
+    
+            .dropdown-menu > li > a i {
+                font-size: 14px;
+            }
+        }
+    }
+    
+    /* تحسين المربع الأبيض */
+    .white-block {
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .white-block .nav-menu {
+        border: none;
+        border-bottom: 1px solid #eaeaea;
+        border-radius: 0;
+        margin: 0;
+        background: transparent;
+    }
+    
+    .white-block .nav-menu:last-child {
+        border-bottom: none;
+    }
+    
+    .white-block .nav > li {
+        margin: 0;
+        width: 100%;
+    }
+    
+    /* تأكيد رؤية جميع الروابط */
+    .nav > li > a,
+    .navbar-nav > li > a,
+    .nav-menu,
+    .contact-header,
+    .email-header,
+    .contact-us-link {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+}
+
+
+
+
+
+
 
 /* Remove all problematic styles */
 .inside img[src=''],
@@ -1254,3 +2337,6 @@ footer::before {
 }
 
 
+
+
+/* Modern Navbar Styles */
